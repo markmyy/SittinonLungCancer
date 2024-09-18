@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lungcancer"
+    android:background="@drawable/bg3">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="175dp"
+        android:text="ตรวจเช็คโรคมะเร็ง"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"/>
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/krop"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAge"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:text="อายุ"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewChro"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:text="โรคเรื้อรัง"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAge"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewAllergy"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="42dp"
+        android:text="ภูมิแพ้"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerAllergy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerChro"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewCoughing"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="22dp"
+        android:text="การไอ"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCoughing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerFatigue"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewGender"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="6dp"
+        android:text="เพศ"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerGender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewSmoking"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="38dp"
+        android:text="การสูบบุหรี่"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerSmoking"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerGender"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewFatigue"
+        android:layout_width="175dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="30dp"
+        android:text="อาการอ่อนเพลีย"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerFatigue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSmoking"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerSmoking"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/krop"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:spinnerMode="dialog"
+        android:text="sad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSmoking"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/krop"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:spinnerMode="dialog"
+        android:text="sad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGender"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerAllergy"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/krop"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:spinnerMode="dialog"
+        android:text="sad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAllergy"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerFatigue"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/krop"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:spinnerMode="dialog"
+        android:text="sad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFatigue"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerCoughing"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/krop"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:spinnerMode="dialog"
+        android:text="sad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCoughing"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerChro"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/krop"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:spinnerMode="dialog"
+        android:text="sad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewChro"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btngo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/krop"
+        android:text="ผลตรวจ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

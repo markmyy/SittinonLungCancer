@@ -1,0 +1,31 @@
+<resources>
+    <string name="root_url">http://10.13.4.177:3000/api/lungcancer</string>
+    <string name="app_name">Ai</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string-array name="gender">
+        <item>ผู้ชาย</item>
+        <item>ผู้หญิง</item>
+    </string-array>
+    <string-array name="allergy">
+        <item>ไม่เป็นภูมิแพ้</item>
+        <item>เป็นภูมิแพ้</item>
+    </string-array>
+    <string-array name="smoking">
+        <item>ไม่สูบ</item>
+        <item>สูบ</item>
+    </string-array>
+    <string-array name="chro">
+        <item>ไม่เป็นโรค</item>
+        <item>เป็นโรค</item>
+    </string-array>
+    <string-array name="fatigue">
+        <item>ไม่มีอาการ</item>
+        <item>มีอาการ</item>
+    </string-array>
+    <string-array name="coughing">
+        <item>ไม่มีการไอ</item>
+        <item>มีการไอ</item>
+    </string-array>
+</resources>
